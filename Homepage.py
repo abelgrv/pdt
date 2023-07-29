@@ -40,6 +40,25 @@ data = sheet_instance.get_all_records()
 df = pd.DataFrame(data)
 
 st.dataframe(df)
+
+
+search_string = 'abel'
+
+# Create a boolean mask to identify rows containing the search_string in 'City' column
+mask = df['a'].str.contains(search_string)
+
+# Filter the DataFrame to get rows where 'City' contains the search_string
+filtered_df = df[mask]
+
+# Get values from other columns ('Name' and 'Age') in the same row
+names = filtered_df['b']
+ages = filtered_df['c']
+
+# Display the results
+print("b:", names.tolist())
+print("c:", ages.tolist())
+
+
 #sheet_id = '1131997511'
 #csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
 #database_df = pd.read_csv(csv_url, on_bad_lines='skip')
