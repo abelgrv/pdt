@@ -51,15 +51,15 @@ mask = df['a'].str.contains(search_string)
 filtered_df = df[mask]
 
 # Get values from other columns ('Name' and 'Age') in the same row
-names = filtered_df['b']
-ages = filtered_df['c']
+b = filtered_df['b']
+c = filtered_df['c']
 
 # Display the results
-print("b:", names.tolist())
-print("c:", ages.tolist())
+#print("b:", b.tolist())
+#print("c:", c.tolist())
 
-st.write(names, ages)
-st.write(ages)
+st.write(b)
+st.write(c)
 
 #sheet_id = '1131997511'
 #csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
