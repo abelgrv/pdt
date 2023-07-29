@@ -31,7 +31,7 @@ scopes = ['https://www.googleapis.com/auth/spreadsheets',
 #creds = ServiceAccountCredentials.from_json_keyfile_name('.stremlit/pdt-abel-ramos-56af719122c8.json', scopes)
 #client = gspread.authorize(creds)
 
-gc = gspread.service_account(filename='pdt-abel-ramos-56af719122c8.json')
+gc = gspread.service_account(filename='.stremlit/pdt-abel-ramos-56af719122c8.json')
 # get data from google sheets
 spreadsheet_id = '1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo'
 sheet = gc.open_by_key(spreadsheet_id)
