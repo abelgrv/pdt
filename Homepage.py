@@ -42,7 +42,7 @@ df = pd.DataFrame(data)
 st.dataframe(df)
 
 
-search_string = 'abel'
+search_string = my_input
 
 # Create a boolean mask to identify rows containing the search_string in 'City' column
 mask = df['a'].str.contains(search_string)
