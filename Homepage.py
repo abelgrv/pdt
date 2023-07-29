@@ -59,7 +59,8 @@ e = filtered_df['e']
 st.write(d)
 st.write(e)
 
-concatenated_df = pd.concat([d, e], axis=1, ignore_index=True, keys=['d', 'e'])
+concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
+# ,ignore_index=True
 
 # Display the concatenated DataFrame
 st.dataframe(concatenated_df)
