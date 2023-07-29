@@ -59,6 +59,11 @@ e = filtered_df['e']
 st.write(d)
 st.write(e)
 
+concatenated_df = pd.concat(d, e, ignore_index=True)
+
+# Display the concatenated DataFrame
+st.dataframe(concatenated_df)
+
 #sheet_id = '1131997511'
 #csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
 #database_df = pd.read_csv(csv_url, on_bad_lines='skip')
