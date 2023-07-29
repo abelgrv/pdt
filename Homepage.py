@@ -18,11 +18,15 @@ if submit:
     st.write("You have entered: ", my_input)
 
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
-
-st.title("Read Google Sheet as DataFrame")
-
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-df = conn.read(worksheet="Hoja 1")
-
-st.dataframe(df)
+import pandas as pd #if you will
+import gspread
+from google.oauth2 import service_account
+# Create a connection object.
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"],
+    scopes=[
+        "https://www.googleapis.com/auth/spreadsheets","https://www.googleapis.com/auth/drive"
+    ],
+)
+conn = connect(credentials=credentials)
+client=gspread.authorize(credentials)
