@@ -58,6 +58,8 @@ ages = filtered_df['c']
 print("b:", names.tolist())
 print("c:", ages.tolist())
 
+st.write(names)
+st.write(ages)
 
 #sheet_id = '1131997511'
 #csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
