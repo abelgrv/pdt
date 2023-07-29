@@ -51,7 +51,7 @@ mask = df['a'].str.contains(search_string)
 filtered_df = df[mask]
 
 # Get values from other columns ('Name' and 'Age') in the same row
-names = filtered_df['b']
+names = filtered_df['b','c']
 ages = filtered_df['c']
 
 # Display the results
