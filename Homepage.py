@@ -28,10 +28,10 @@ import pandas as pd
 # set up google sheets connection
 scopes = ['https://www.googleapis.com/auth/spreadsheets',
             'https://www.googleapis.com/auth/drive']
-#creds = ServiceAccountCredentials.from_json_keyfile_name('.stremlit/pdt-abel-ramos-56af719122c8.json', scopes)
+#creds = ServiceAccountCredentials.from_json_keyfile_name('.streamlit/pdt-abel-ramos-56af719122c8.json', scopes)
 #client = gspread.authorize(creds)
 
-gc = gspread.service_account(filename='.stremlit/pdt-abel-ramos-56af719122c8.json')
+gc = gspread.service_account(filename='.streamlit/pdt-abel-ramos-56af719122c8.json')
 # get data from google sheets
 spreadsheet_id = '1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo'
 sheet = gc.open_by_key(spreadsheet_id)
