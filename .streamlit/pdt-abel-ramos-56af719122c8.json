@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pdt-abel-ramos",
+  "private_key_id": "56af719122c812b8f5af54d3e1e1abf2d2fbceed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDmXH3Uq1nPEUKO\nnrqoPq9z16qQHjfbMhnp3hK5oWYQjVLXDdc5Z3AOtZDUwJgTXm+V4/v5kPKHZBq5\nSC9CKu+SBXpY1KN5Ico/5r4RvbsCpDYfulvOqPpRGnRBEsiJedHrKj5N1dZZOIQD\nbUZYPuOiD++2QixYdZ3/ypLD2V/9U94uPyyy2T9QTDeaeQ0w3lZkDZ7MSxKCxHm5\nZljoBKJ7bWr5Is06MII6yEZzQunhMaBfL+of9x5R6pqVpEU/2OtGw6Pax0UgLBNa\nzvhpLy7HlKChIGamAJZKSvjGu1BU32m3zuDeZJCqWRcQhKKm5b3x5pkqeg3kiKdi\nyN2MZYd9AgMBAAECggEADfFruVdcwnyGNYk0fZH7vyx+2aXGljkgWegz5HH5MkfH\ni5Y+IG6bGPzS5Rm6KrP015L60aZ9E4ZS2sOcfqoIIaO8vcszENYjfn4qI3tDKjwD\nvaRjQa03J3kNL9Ih+rY5pz0Bk+b9SB20Wdu/ngBCeXDy/qpfMkR+OXkKrJmH5paT\nTgj5GAd2IieuiYroe/RQ5iGBDdS2rdpSm9+NpL+LTm06Z1z3qc9VZooUiECYqR4x\nBBtWBBhOrYPVahwFK4Hyg1LmQMiVcnyg/O2/9Rtb5N1YYmyvzVF0oyO2QHEQUwIX\nKPGy91wem85uF9hBDRwb2k7hro8Mj+eNe+DBeWnhAQKBgQD18vs9u6rGxL7mpY+i\n0hAS1WvRIHQtdnBpJ7ULQ7sfwfWbHWZT0l5BfsF0VaIVNzTYdhfNX+/P9qFrG7Hy\nsIYXMLtaJ6YVslg7Mc0VVhn/M0uR79pooEu/YIj3xdQO1jCzFlrx4UbFKG26Pj7+\nydMBflGbS7ODr6uEljMMpt9NAQKBgQDvxm+6sN2QXiFZuBsXOVbM3KWRHUsbrIo+\n3IMcODmRDa+VF42/hcx2mS2eYmpyv5WcWGWYtoVUA9aW4jF8VEwhqFN3yHgugTtg\n7OR3Oivi8aNYDZJ0DyT1Vf7Fot6XPjdPYuCzC/RIrkUCnSsbLyMZOl8Wl26FPXz3\nub3B6cbufQKBgQDmPlnFKPJusbCk60jT/CLf/ru4QtF/3ejOCEYMDZQX3tO2Koeo\n4L8sQSWJasEZa10lZyhRMwalgRUL2Bl2QJrHCu/ZLlTk6th+UdjTqI8dwT91lzy3\nxZgjyJNwoNosKYfdn4fz+BjwaTCPscX3b6kBNOfgobWkCchfjtyrc2yIAQKBgQDG\np+gGC2dmpzaGeQyo7y7FSMI8OsLxyMA5WMWf6c14KpigtAUS+y3tzPeI1A1RyP2R\nrYNvRTmt5Ag0tm89jTIOaMHO6l74WMXzhhG73oxh2MX2vDfsxGdghMEyycAWGswE\nj+2PKoZYeVpf0gvW1/UCf+QseYZuCgWx0UgwkxnomQKBgCQW+2EB3RxDH+Dstb2k\nDC6bftYAwMy7WSxaQpTw7BM41Yakzm9A4FlR0i8GNPTJS8NNjNA0j3ts2t03WALk\nOwlw9GeJpq2v4tByRvCIEmw13EuYX9bCirX663MA3vyh+iT9HeXF0/e3Qw6JTBY7\nWGFT1bW/Z23XTgqvby+Qnd8x\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-acc@pdt-abel-ramos.iam.gserviceaccount.com",
+  "client_id": "109561188446333675253",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-acc%40pdt-abel-ramos.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
