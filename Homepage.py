@@ -58,7 +58,7 @@ ages = filtered_df['c']
 print("b:", names.tolist())
 print("c:", ages.tolist())
 
-st.write(names)
+st.write(names, ages)
 st.write(ages)
 
 #sheet_id = '1131997511'
