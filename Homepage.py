@@ -17,16 +17,29 @@ if submit:
     st.session_state["my_input"] = my_input
     st.write("You have entered: ", my_input)
 
+#import seaborn as sns
+#import plotly.express as px
+#import plotly.graph_objects as go
 import streamlit as st
-import pandas as pd #if you will
 import gspread
-from google.oauth2 import service_account
-# Create a connection object.
-credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"],
-    scopes=[
-        "https://www.googleapis.com/auth/spreadsheets","https://www.googleapis.com/auth/drive"
-    ],
-)
-conn = connect(credentials=credentials)
-client=gspread.authorize(credentials)
+from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
+
+# set up google sheets connection
+scopes = ['https://www.googleapis.com/auth/spreadsheets',
+            'https://www.googleapis.com/auth/drive']
+#creds = ServiceAccountCredentials.from_json_keyfile_name('.stremlit/pdt-abel-ramos-56af719122c8.json', scopes)
+#client = gspread.authorize(creds)
+
+gc = gspread.service_account(filename='pdt-abel-ramos-56af719122c8.json')
+# get data from google sheets
+spreadsheet_id = '1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo'
+sheet = gc.open_by_key(spreadsheet_id)
+sheet_instance = sheet.get_worksheet(0)
+data = sheet_instance.get_all_records()
+df = pd.DataFrame(data)
+
+st.dataframe(df)
+#sheet_id = '1131997511'
+#csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
+#database_df = pd.read_csv(csv_url, on_bad_lines='skip')
