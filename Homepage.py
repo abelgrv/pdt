@@ -45,21 +45,23 @@ st.dataframe(df)
 search_string = my_input
 
 # Create a boolean mask to identify rows containing the search_string in 'City' column
-mask = df['a'].str.contains(search_string)
+mask = (df['a'].str.contains(search_string) |
+        df['b'].str.contains(search_string) |
+        df['c'].str.contains(search_string))
 
 # Filter the DataFrame to get rows where 'City' contains the search_string
 filtered_df = df[mask]
 
 # Get values from other columns ('Name' and 'Age') in the same row
-b = filtered_df['b']
-c = filtered_df['c']
+d = filtered_df['d']
+e = filtered_df['e']
 
 # Display the results
 #print("b:", b.tolist())
 #print("c:", c.tolist())
 
-st.write(b)
-st.write(c)
+st.write(d)
+st.write(e)
 
 #sheet_id = '1131997511'
 #csv_url = f"https://docs.google.com/spreadsheets/d/1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo/export?format=csv"
