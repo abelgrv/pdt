@@ -2,6 +2,6 @@ streamlit==1.24.1
 git+https://github.com/streamlit/gsheets-connection
 gspread==5.10.0
 google-auth
-oauth2client
+
 pandas
 pandasql  # this is for examples/ only
