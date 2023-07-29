@@ -18,29 +18,11 @@ if submit:
     st.write("You have entered: ", my_input)
 
 import streamlit as st
-import pandasql as psql
-
-import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
+st.title("Read Google Sheet as DataFrame")
+
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-st.write(conn)
-st.help(conn)
+df = conn.read(worksheet="Hoja 1")
 
-
-import streamlit as st
-from streamlit_gsheets import GSheetsConnection
-
-# Create GSheets connection
-conn = st.experimental_connection("gsheets", type=GSheetsConnection)
-
-# Read Google WorkSheet as DataFrame
-df = conn.read(
-    usecols=[
-        0,
-        1,
-    ],  # specify columns which you want to get, comment this out to get all columns
-)
-
-# Display our Spreadsheet as st.dataframe
 st.dataframe(df)
