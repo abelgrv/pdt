@@ -38,7 +38,7 @@ sheet = gc.open_by_key(spreadsheet_id)
 sheet_instance = sheet.get_worksheet(0)
 data = sheet_instance.get_all_records()
 df = pd.DataFrame(data)
-
+df = df.astype(str)
 st.dataframe(df)
 
 
@@ -55,10 +55,6 @@ filtered_df = df[mask]
 # Get values from other columns ('Name' and 'Age') in the same row
 d = filtered_df['d']
 e = filtered_df['e']
-
-# Display the results
-#print("b:", b.tolist())
-#print("c:", c.tolist())
 
 st.write(d)
 st.write(e)
