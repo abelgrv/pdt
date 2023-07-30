@@ -1,11 +1,11 @@
 import streamlit as st
+from PIL import Image
+
 favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
     page_title="Multipage App",
     page_icon=favicon,
 )
-
-
 
 
 st.title(':green[Proyecto de Desarrollo Tecnológico]')
