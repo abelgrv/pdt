@@ -4,5 +4,4 @@ def Projects_content():
   st.title("Projects")
   st.write("You have entered", st.session_state["my_input"])
 
-st.title("Projects")
-st.write("You have entered", st.session_state["my_input"])
+Projects_content()
