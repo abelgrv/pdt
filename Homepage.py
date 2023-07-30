@@ -15,9 +15,6 @@ local_css("style/style1.css")
 
 
 
-# Display the background image
-st.markdown(css, unsafe_allow_html=True)
-
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
 
