@@ -35,8 +35,9 @@ def Projects_content():
 
     # Create a boolean mask to identify rows containing the search_string in 'City' column
     mask = (df['a'] == search_string) | (df['b'] == search_string) | (df['c'] == search_string)
-    if not mask.any():
-        st.write("Información incorrecta. Intente nuevamente.")
+    if not my_input:
+        if not mask.any():
+            st.write("Información incorrecta. Intente nuevamente.")
         
     # Filter the DataFrame to get rows where 'City' contains the search_string
     filtered_df = df[mask]
