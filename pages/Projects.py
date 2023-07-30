@@ -1,6 +1,9 @@
 import streamlit as st
 
 def Projects_content():
+    if "my_input" not in st.session_state:
+        st.session_state["my_input"] = ""
+    
     my_input = st.text_input("Ingresa tu nombre o DNI o Nro de Historia", st.session_state["my_input"])
     submit = st.button("Aceptar")
     if submit:
