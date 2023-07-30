@@ -4,12 +4,16 @@ st.set_page_config(
     page_title="Multipage App",
     page_icon="👋",
 )
+
+
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
 local_css("style/style1.css")
+
+
 
 # Display the background image
 st.markdown(css, unsafe_allow_html=True)
