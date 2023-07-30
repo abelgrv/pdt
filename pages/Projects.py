@@ -1,6 +1,11 @@
 import streamlit as st
 
 def Projects_content():
+    my_input = st.text_input("Ingresa tu nombre o DNI o Nro de Historia", st.session_state["my_input"])
+    submit = st.button("Aceptar")
+    if submit:
+    st.session_state["my_input"] = my_input
+    st.write("Has ingresado: ", my_input)
     search_string = my_input
 
     # Create a boolean mask to identify rows containing the search_string in 'City' column
