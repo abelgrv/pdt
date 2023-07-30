@@ -26,7 +26,7 @@ def redirect(url):
 consult = st.button("Consulta de Pacientes IREN")
 if consult:
 #    Projects.Projects_content()
-    redirect("/Projects")
+    redirect("https://ucsp-pdt.streamlit.app/Projects")
 
 
 col1, col2 = st.columns(2)
