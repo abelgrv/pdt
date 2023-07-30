@@ -5,6 +5,16 @@ st.set_page_config(
     page_icon="👋",
 )
 
+# Read custom CSS from the file
+css = """
+<style>
+%s
+</style>
+""" % open("style/style1.css").read()
+
+# Display the background image
+st.markdown(css, unsafe_allow_html=True)
+
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
 
