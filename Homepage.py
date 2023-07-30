@@ -20,25 +20,9 @@ st.sidebar.markdown("***")
 	
 consult = st.button("Consulta de Pacientes IREN")
 if consult:
-#    Projects.Projects_content()
-    st.experimental_set_query_params(page="Projects")
-	
-# Include hidden text with JavaScript redirection code
-st.markdown(
-    """
-    <div id="redirect"></div>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const page = urlParams.get('page');
-        if (page) {
-            const redirectUrl = `/${page}`;
-            document.getElementById('redirect').innerHTML = `<meta http-equiv="refresh" content="0; url=${redirectUrl}">`;
-        }
-    </script>
-    """,
-    unsafe_allow_html=True
-)
+    Projects.Projects_content()
 
+	
 col1, col2 = st.columns(2)
 
 with col1:
