@@ -1,8 +1,8 @@
 import streamlit as st
-
+favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
     page_title="Multipage App",
-    page_icon="👋",
+    page_icon=favicon,
 )
 
 
