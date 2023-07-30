@@ -45,8 +45,6 @@ def Projects_content():
     d = filtered_df['d']
     e = filtered_df['e']
 
-    st.write(d)
-    st.write(e)
 
     concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
     # ,ignore_index=True
