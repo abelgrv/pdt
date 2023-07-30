@@ -17,16 +17,18 @@ image = Image.open('images/logo.png')
 st.sidebar.image(image)
 st.sidebar.markdown("***")
 
-consult = st.button("Consulta de Pacientes IREN")
-if consult:
-#    Projects.Projects_content()
-    redirect("/Projects")
-
 def redirect(url):
     # Redirect the page using JavaScript
     js_code = f"window.location.href='{url}'"
     html = f'<script>{js_code}</script>'
     st.components.v1.html(html, height=1)
+	
+consult = st.button("Consulta de Pacientes IREN")
+if consult:
+#    Projects.Projects_content()
+    redirect("/Projects")
+
+
 col1, col2 = st.columns(2)
 
 with col1:
