@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from pages/Projects.py import Projects_content
+from Projects.py import Projects_content
 
 favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
