@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from Project import Project_content
 
 favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
@@ -15,6 +16,10 @@ st.sidebar.success("Selecciona una página")
 image = Image.open('images/logo.png')
 st.sidebar.image(image)
 st.sidebar.markdown("***")
+
+consult = st.button("Consulta de Pacientes IREN")
+if consult:
+    Project_content()
 
 col1, col2 = st.columns(2)
 
