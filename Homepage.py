@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from pages import Projects
-from Projects import Projects_content
+
 favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
     page_title="Multipage App",
