@@ -19,7 +19,7 @@ st.sidebar.markdown("***")
 
 consult = st.button("Consulta de Pacientes IREN")
 if consult:
-    Projects_content()
+    Projects.Projects_content()
 
 col1, col2 = st.columns(2)
 
