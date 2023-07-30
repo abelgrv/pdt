@@ -6,13 +6,12 @@ st.set_page_config(
 )
 
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("style/style1.css")
-
+css = """
+<head>
+    <link rel="stylesheet" href="style/style1.css">
+</head>
+"""
+st.markdown(css, unsafe_allow_html=True)
 
 
 st.title("Main Page")
