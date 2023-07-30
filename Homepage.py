@@ -11,11 +11,11 @@ st.sidebar.success("Select a page above.")
 if "my_input" not in st.session_state:
     st.session_state["my_input"] = ""
 
-my_input = st.text_input("Input a text here", st.session_state["my_input"])
+my_input = st.text_input("Ingresa tu nombre o DNI o Nro de Historia", st.session_state["my_input"])
 submit = st.button("Submit")
 if submit:
     st.session_state["my_input"] = my_input
-    st.write("You have entered: ", my_input)
+    st.write("Has ingresado: ", my_input)
 
 #import seaborn as sns
 #import plotly.express as px
