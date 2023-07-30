@@ -1,6 +1,23 @@
 import streamlit as st
 
 def Projects_content():
+
+    # set up google sheets connection
+    scopes = ['https://www.googleapis.com/auth/spreadsheets',
+                'https://www.googleapis.com/auth/drive']
+    #creds = ServiceAccountCredentials.from_json_keyfile_name('.streamlit/pdt-abel-ramos-56af719122c8.json', scopes)
+    #client = gspread.authorize(creds)
+
+    gc = gspread.service_account(filename='.streamlit/pdt-abel-ramos-56af719122c8.json')
+    # get data from google sheets
+    spreadsheet_id = '1aWE7keEB3fj3VlQsS8Auyka2WMhq21Fakog7lvVxZIo'
+    sheet = gc.open_by_key(spreadsheet_id)
+    sheet_instance = sheet.get_worksheet(0)
+    data = sheet_instance.get_all_records()
+    df = pd.DataFrame(data)
+    df = df.astype(str)
+    st.dataframe(df)
+
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
     
