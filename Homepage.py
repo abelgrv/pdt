@@ -7,10 +7,18 @@ st.set_page_config(
 
 
 css = """
-<head>
-    <link rel="stylesheet" href="style/style1.css">
-</head>
+<style>
+.custom-container {
+    background-image: url('apply.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px; /* Optional: Add padding for better visibility */
+}
+</style>
 """
+st.set_page_config(layout="wide")  # Disable default header and footer
+
+# Display the background image using st.markdown with the custom CSS
 st.markdown(css, unsafe_allow_html=True)
 
 
