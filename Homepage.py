@@ -6,20 +6,7 @@ st.set_page_config(layout="wide",
 )
 
 
-css = """
-<style>
-.custom-container {
-    background-image: url('apply.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 20px; /* Optional: Add padding for better visibility */
-}
-</style>
-"""
 
-
-# Display the background image using st.markdown with the custom CSS
-st.markdown(css, unsafe_allow_html=True)
 
 
 st.title("Main Page")
