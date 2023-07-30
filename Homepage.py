@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(
+st.set_page_config(layout="wide",
     page_title="Multipage App",
     page_icon="👋",
 )
@@ -16,7 +16,7 @@ css = """
 }
 </style>
 """
-st.set_page_config(layout="wide")  # Disable default header and footer
+
 
 # Display the background image using st.markdown with the custom CSS
 st.markdown(css, unsafe_allow_html=True)
