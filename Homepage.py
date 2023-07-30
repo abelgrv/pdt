@@ -17,17 +17,27 @@ image = Image.open('images/logo.png')
 st.sidebar.image(image)
 st.sidebar.markdown("***")
 
-def redirect(url):
-    # Redirect the page using JavaScript
-    js_code = f"window.location.href='https://ucsp-pdt.streamlit.app/Projects'"
-    html = f'<script>{js_code}</script>'
-    st.components.v1.html(html, height=1)
 	
 consult = st.button("Consulta de Pacientes IREN")
 if consult:
 #    Projects.Projects_content()
-    redirect("https://ucsp-pdt.streamlit.app/Projects")
-
+    st.experimental_set_query_params(page="Projects")
+	
+# Include hidden text with JavaScript redirection code
+st.markdown(
+    """
+    <div id="redirect"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const page = urlParams.get('page');
+        if (page) {
+            const redirectUrl = `/${page}`;
+            document.getElementById('redirect').innerHTML = `<meta http-equiv="refresh" content="0; url=${redirectUrl}">`;
+        }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 
 col1, col2 = st.columns(2)
 
