@@ -19,7 +19,7 @@ st.sidebar.markdown("***")
 
 def redirect(url):
     # Redirect the page using JavaScript
-    js_code = f"window.location.href='{url}'"
+    js_code = f"window.location.href='pages/Projects'"
     html = f'<script>{js_code}</script>'
     st.components.v1.html(html, height=1)
 	
