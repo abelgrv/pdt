@@ -21,7 +21,7 @@ def Projects_content():
     df = df.astype(str)
     st.dataframe(df)
 
-    st.title("Consulta de pacientes IREN"
+    st.title("Consulta de pacientes IREN")
     
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
