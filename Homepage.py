@@ -8,9 +8,21 @@ st.set_page_config(layout="wide",
 
 
 
+st.title(':green[Proyecto de Desarrollo Tecnológico]')
+st.header('Construcción de un prototipo electromagnético capaz de medir propiedades dieléctricas de tejidos biológicos no homogéneos en ambiente controlado, basado en una sonda coaxial de circuito abierto')
+st.sidebar.success("Selecciona una página")
 
-st.title("Main Page")
-st.sidebar.success("Select a page above.")
+image = Image.open('images/logo.png')
+st.sidebar.image(image)
+st.sidebar.markdown("***")
+
+multiline_text = """
+This is a multiline text.
+You can display multiple lines of text using triple quotes.
+It will be rendered exactly as you write it.
+"""
+st.text(multiline_text)
+
 
 if "my_input" not in st.session_state:
     st.session_state["my_input"] = ""
