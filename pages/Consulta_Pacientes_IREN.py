@@ -72,7 +72,7 @@ def page_content():
     # ,ignore_index=True
 
     def make_hyperlink(url):
-        return f'<a href="{url}" target="_blank">{url}</a>' if url.startswith("http") else url
+        return f'<a href="{url}" target="_blank">{url}</a>' if str(url).startswith("http") else url
 
     df_hlinks = concatenated_df1.apply(make_hyperlink)
     
