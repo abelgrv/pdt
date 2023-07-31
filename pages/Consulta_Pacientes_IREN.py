@@ -57,31 +57,28 @@ def page_content():
     x = filtered_df['x']
     y = filtered_df['y']
 
-    aa = filtered_df['aa']
-    ab = filtered_df['ab']
+    o = filtered_df['o']
+    p = filtered_df['p']
+    q = filtered_df['q']
+    r = filtered_df['r']
+    s = filtered_df['s']
     
     columns = ['d', 'e', 'k', 'g', 'l', 't', 'x', 'y']
-    columns1 = ['aa', 'ab']
+    columns1 = ['o', 'p', 'q', 'r', 's']
     first_row_data_loc = df.loc[0, columns]
     first_row_data_loc1 = df.loc[0, columns1]
 
 
     
     concatenated_df = pd.concat([d, e, k, g, l, t, x, y], axis=1, keys=first_row_data_loc)
-    concatenated_df1 = pd.concat([aa, ab], axis=1, keys=first_row_data_loc1)
+    concatenated_df1 = pd.concat([o, p, q, r, s], axis=1, keys=first_row_data_loc1)
     # ,ignore_index=True
 
-    def make_hyperlink(url):
-        return f'<a href="{url}" target="_blank">{url}</a>' if str(url).startswith("http") else url
-
-    df_hlinks = concatenated_df1.apply(make_hyperlink)
     
     # Display the concatenated DataFrame
     if my_input:
         st.dataframe(concatenated_df)
-        #st.table(df_hlinks)
-        st.write(df_hlinks.to_html(escape=False), unsafe_allow_html=True)
-        #st.dataframe(concatenated_df1)
+        st.dataframe(concatenated_df1)
   
 page_content()
 #st.title("Projects")
