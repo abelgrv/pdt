@@ -59,14 +59,11 @@ with col2:
 	st.image(image)
 
 with col1:
+	st.markdown("Ver más acerca de MABIS")
 	":green[Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]"
 
 	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS"
-	# Link to OpenAI's website
 
-
-        # Display the hyperlink with custom text
-st.markdown("Ver más acerca de MABIS")
 
 	"These can be compared with a default schedule in which 4 theatres operate 5 days per week, with 3 sessions per day.  Of those sessions, two will randomly \
 	allocate either 2 primary joint replacements or 1 revision joint replacement, while the third session will schedule 1 primary joint replacement."
