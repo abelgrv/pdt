@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 # Use local CSS
 def local_css(file_name):
