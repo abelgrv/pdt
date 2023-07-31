@@ -72,7 +72,7 @@ with col1:
 	weekend sessions, or of scheduling different surgical types across weekdays."  
 	
 	"The impacts of these changes on bed utilisation and total surgical throughput can be investigated."
-	
+	st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")
 	st.markdown("***")
 	":green[Simulation Scenarios]"
 
