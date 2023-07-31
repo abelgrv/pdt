@@ -39,24 +39,30 @@ def page_content():
     search_string = my_input
 
     # Create a boolean mask to identify rows containing the search_string in 'City' column
-    ###mask = (df['Nombres y apellidos'] == search_string) | (df['Nùmero de Historia'] == search_string) | (df['DNI'] == search_string)
-    ###if my_input:
-    ###    if not mask.any():
-    ###        st.write("Información incorrecta. Intente nuevamente.")
+    mask = (df['d'] == search_string) | (df['e'] == search_string) | (df['k'] == search_string)
+    if my_input:
+        if not mask.any():
+            st.write("Información incorrecta. Intente nuevamente.")
         
     # Filter the DataFrame to get rows where 'City' contains the search_string
-    ###filtered_df = df[mask]
+    filtered_df = df[mask]
 
     # Get values from other columns ('Name' and 'Age') in the same row
-    ###d = filtered_df['N']
-    ###e = filtered_df['Responsable']
+    d = filtered_df['d']
+    e = filtered_df['e']
+    k = filtered_df['k']
+    g = filtered_df['g']
+    l = filtered_df['l']
+    t = filtered_df['t']
+    x = filtered_df['x']
+    y = filtered_df['y']
 
 
-    concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
+    concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e', 'k', 'g', 'l', 't', 'x', 'y'])
     # ,ignore_index=True
 
     # Display the concatenated DataFrame
-    ###st.dataframe(concatenated_df)
+    st.dataframe(concatenated_df)
   
 page_content()
 #st.title("Projects")
