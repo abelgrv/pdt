@@ -62,7 +62,7 @@ with col1:
 	st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")
 	":green[Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]"
 
-	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS"
+	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS. st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")"
 
 
 	"These can be compared with a default schedule in which 4 theatres operate 5 days per week, with 3 sessions per day.  Of those sessions, two will randomly \
