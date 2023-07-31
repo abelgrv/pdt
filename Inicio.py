@@ -31,8 +31,18 @@ with col1:
 
 	":green[Este proyecto tiene como objetivo ayudar en la construcción de un prototipo electromagnético capaz de analizar las propiedades dieléctricas de los tejidos humanos (Enfoque tejidos mamarios), se integran diferentes líneas de investigación( Radiofrecuencia, control y automatización, telemática y procesamiento de señales).]"
 
-	":green[The model represents surgical joint replacement activity from theatre scheduling, to ward stay, to discharge for primary and revision hip and knee replacement surgeries, \
-	and unicompartmental knee replacement surgery.]"
+	":green[Inicialmente el proyecto necesita de apoyo en los siguientes puntos:]"
+	":green[- Medición de propiedades dieléctricas de tejidos biológicos In vivo, Ex-vivo(Cirugía).]"
+	":green[- Medición de propiedades dieléctricas de tejidos biológicos In vivo(Quimioterapia). ]"
+	":green[- Medición de propiedades dieléctricas de tejidos biológicos In vivo(Radiología).]"
+	":green[- Desarrollo de programación  frontend, página web.]"
+	":green[- Programación de App en MIT app inventor. ]"
+	":green[- Apoyo en sistema y circuito de control de mesa automatizada. ]"
+	":green[- Apoyo en diseños mamarios anatómicos realistas en 3D.]"
+
+
+
+
 	st.markdown("***")
 	
 
@@ -40,7 +50,7 @@ with col1:
 with col2:
 	st.markdown("***")
 	
-	st.write(':blue[Figure 1: Orthopaedic Model Process Flow]')
+	st.write(':blue[Figura 1: Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]')
 	image = Image.open('apply.jpg')
 	st.image(image)
 	
