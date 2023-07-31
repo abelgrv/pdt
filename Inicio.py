@@ -51,7 +51,7 @@ with col2:
 	st.markdown("***")
 	
 	st.write(':blue[Figura 1: Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]')
-	image = Image.open('apply.jpg')
+	image = Image.open('images/iren.jpg')
 	st.image(image)
 	
 	st.write(':blue[Figure 2: Model Outputs and Inputs]')
