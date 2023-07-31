@@ -23,9 +23,11 @@ def page_content():
     st.dataframe(df)
 
     st.title("Consulta de pacientes IREN")
+    
     image = Image.open('images/logo.png')
     st.sidebar.image(image)
     st.sidebar.markdown("***")
+    
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
     
@@ -37,24 +39,24 @@ def page_content():
     search_string = my_input
 
     # Create a boolean mask to identify rows containing the search_string in 'City' column
-    mask = (df['Nombres y apellidos'] == search_string) | (df['Nùmero de Historia'] == search_string) | (df['DNI'] == search_string)
-    if my_input:
-        if not mask.any():
-            st.write("Información incorrecta. Intente nuevamente.")
+    ###mask = (df['Nombres y apellidos'] == search_string) | (df['Nùmero de Historia'] == search_string) | (df['DNI'] == search_string)
+    ###if my_input:
+    ###    if not mask.any():
+    ###        st.write("Información incorrecta. Intente nuevamente.")
         
     # Filter the DataFrame to get rows where 'City' contains the search_string
-    filtered_df = df[mask]
+    ###filtered_df = df[mask]
 
     # Get values from other columns ('Name' and 'Age') in the same row
-    d = filtered_df['N']
-    e = filtered_df['Responsable']
+    ###d = filtered_df['N']
+    ###e = filtered_df['Responsable']
 
 
     concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
     # ,ignore_index=True
 
     # Display the concatenated DataFrame
-    st.dataframe(concatenated_df)
+    ###st.dataframe(concatenated_df)
   
 page_content()
 #st.title("Projects")
