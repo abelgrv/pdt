@@ -29,11 +29,12 @@ with col1:
 	
 	st.markdown("***")
 
-	":green[This interactive tool is a discrete event simulation model, developed as a single component of the larger Hospital Efficiency Project multi-study.]"
+	":green[Este proyecto tiene como objetivo ayudar en la construcción de un prototipo electromagnético capaz de analizar las propiedades dieléctricas de los tejidos humanos (Enfoque tejidos mamarios), se integran diferentes líneas de investigación( Radiofrecuencia, control y automatización, telemática y procesamiento de señales).]"
 
 	":green[The model represents surgical joint replacement activity from theatre scheduling, to ward stay, to discharge for primary and revision hip and knee replacement surgeries, \
 	and unicompartmental knee replacement surgery.]"
 	st.markdown("***")
+	
 
 
 with col2:
