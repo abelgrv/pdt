@@ -3,7 +3,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
-def Projects_content():
+def page_content():
 
     # set up google sheets connection
     scopes = ['https://www.googleapis.com/auth/spreadsheets',
@@ -53,6 +53,6 @@ def Projects_content():
     # Display the concatenated DataFrame
     st.dataframe(concatenated_df)
   
-Projects_content()
+page_content()
 #st.title("Projects")
 #st.write("You have entered")
