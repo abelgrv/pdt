@@ -72,15 +72,15 @@ def page_content():
     # ,ignore_index=True
 
     def make_hyperlink(url):
-        return f"[{url}]({url})" if str(url).startswith("http") else url
+        return f'<a href="{url}" target="_blank">{url}</a>' if str(url).startswith("http") else url
 
     df_hlinks = concatenated_df1.apply(make_hyperlink)
     
     # Display the concatenated DataFrame
     if my_input:
         st.dataframe(concatenated_df)
-        st.table(df_hlinks)
-        #st.write(df_hlinks, unsafe_allow_html=True)
+        #st.table(df_hlinks)
+        st.write(df_hlinks.to_html(escape=False), unsafe_allow_html=True)
         #st.dataframe(concatenated_df1)
   
 page_content()
