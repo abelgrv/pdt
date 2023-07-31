@@ -59,22 +59,18 @@ with col2:
 	st.image(image)
 
 with col1:
-	st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")
+	
 	":green[Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]"
 
 	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS."
 
 
-	"These can be compared with a default schedule in which 4 theatres operate 5 days per week, with 3 sessions per day.  Of those sessions, two will randomly \
-	allocate either 2 primary joint replacements or 1 revision joint replacement, while the third session will schedule 1 primary joint replacement."
+	"IREN Sur desarrolla actividades del Sector Salud, para la atención especializada del cáncer y hospitalización, en el ámbito macrorregional, fue creado mediante la Ordenanza Regional Nº 057-2008-AREQUIPA de fecha 17 de Junio del 2008, incorporándolo a la estructura orgánica del Gobierno Regional de Arequipa."
 
-	"The flexible schedule will enable experimentation with the model, for example the effects of increasing the number of sessions per weekday, of adding \
-	weekend sessions, or of scheduling different surgical types across weekdays."  
 	
-	"The impacts of these changes on bed utilisation and total surgical throughput can be investigated."
 	st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")
 	st.markdown("***")
-	":green[Simulation Scenarios]"
+	":green[Sensor usado para las mediciones]"
 
 	"Other scenarios can also be investigated in the model."
 
