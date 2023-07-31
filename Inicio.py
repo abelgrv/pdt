@@ -21,7 +21,7 @@ consult = st.button("Consulta de Pacientes IREN")
 if consult:
     Consulta_Pacientes_IREN.page_content()
 
-	
+website_url = "https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/"	
 col1, col2 = st.columns(2)
 
 with col1:
@@ -63,7 +63,7 @@ with col1:
 
 	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS"
 	# Link to OpenAI's website
-        website_url = "https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/"
+
 
         # Display the hyperlink with custom text
         st.markdown("Ver más acerca de MABIS")
