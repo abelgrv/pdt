@@ -10,6 +10,10 @@ local_css("style/style.css")
 
 st.title("Contacto")
 
+image = Image.open('images/logo.png')
+st.sidebar.image(image)
+st.sidebar.markdown("***")
+
 with st.container():
     st.write("---")
     st.header("Si tienes alguna duda u observación deja un mensaje")
