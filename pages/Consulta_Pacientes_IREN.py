@@ -65,14 +65,22 @@ def page_content():
     first_row_data_loc = df.loc[0, columns]
     first_row_data_loc1 = df.loc[0, columns1]
 
+
+    
     concatenated_df = pd.concat([d, e, k, g, l, t, x, y], axis=1, keys=first_row_data_loc)
     concatenated_df1 = pd.concat([aa, ab], axis=1, keys=first_row_data_loc1)
     # ,ignore_index=True
 
+    def make_hyperlink(url):
+        return f"[{url}]({url})" if url.startswith("http") else url
+
+    df_hlinks = concatenated_df1.applymap(make_hyperlink)
+    
     # Display the concatenated DataFrame
     if my_input:
         st.dataframe(concatenated_df)
-        st.dataframe(concatenated_df1)
+        st.dataframe(df_hlinks)
+        #st.dataframe(concatenated_df1)
   
 page_content()
 #st.title("Projects")
