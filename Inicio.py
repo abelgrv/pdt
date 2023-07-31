@@ -54,8 +54,8 @@ with col2:
 	image = Image.open('images/iren.jpg')
 	st.image(image)
 	
-	st.write(':blue[Figure 2: Model Outputs and Inputs]')
-	image = Image.open('apply.jpg')
+	st.write(':blue[Figura 2: Sistema DAK usado para las mediciones]')
+	image = Image.open('images/dak.jpg')
 	st.image(image)
 
 with col1:
@@ -72,13 +72,8 @@ with col1:
 	st.markdown("***")
 	":green[Sensor usado para las mediciones]"
 
-	"Other scenarios can also be investigated in the model."
+	"La línea de productos DAK de SPEAG ofrece mediciones de parámetros dieléctricos de alta precisión (permitividad, conductividad, tangente de pérdida) en un rango de frecuencia muy amplio de 4 MHz a 67 GHz para diversas aplicaciones en las industrias electrónica, química, alimentaria y médica. La sonda está conectada a un analizador de red vectorial (VNA) para medir el coeficiente de reflexión complejo (S11) en el extremo de la sonda. El S11 medido se convierte luego en la permitividad compleja del material bajo prueba usando el software DAK."
 
-	"For example, the mean lengths-of-stay of different surgical types, and the number of ring-fenced beds available to patients can be changed to understand \
-	effects on surgical throughput."
-	
-	"Additionally, the mean number of days delayed can be changed.  This represents a proportion of patients whose ward length-of-stay\
-	is delayed for various reasons, such as awaiting a community package of care. The proportion of these patients can also be changed."
 
 
 
