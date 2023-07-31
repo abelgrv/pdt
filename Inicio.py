@@ -59,7 +59,7 @@ with col2:
 	st.image(image)
 
 with col1:
-	st.markdown("Ver más acerca de MABIS")
+	st.markdown("[Ver más sobre MABIS](https://ucsp.edu.pe/video-mabis-brasier-ayudara-masificar-deteccion-temprana-cancer-de-mama/)")
 	":green[Instituto Regional de Enfermedades Neoplasicas del Sur (IREN)]"
 
 	"Este proyecto se realiza en alianza con el Instituto Regional de Enfermedades Neoplásicas del Sur al igual que el proyecto MABIS"
