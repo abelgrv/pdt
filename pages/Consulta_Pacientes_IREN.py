@@ -20,7 +20,7 @@ def page_content():
     data = sheet_instance.get_all_records()
     df = pd.DataFrame(data)
     df = df.astype(str)
-    #st.dataframe(df)
+    st.dataframe(df)
 
     st.title("Consulta de pacientes IREN")
     image = Image.open('images/logo.png')
