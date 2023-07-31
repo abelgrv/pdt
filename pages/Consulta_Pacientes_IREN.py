@@ -38,16 +38,16 @@ def page_content():
         st.write("Has ingresado: ", my_input)
     search_string = my_input
 
-    # Create a boolean mask to identify rows containing the search_string in 'City' column
+    # Create a boolean mask to identify rows containing the search_string in '' column
     mask = (df['d'] == search_string) | (df['e'] == search_string) | (df['k'] == search_string)
     if my_input:
         if not mask.any():
             st.write("Información incorrecta. Intente nuevamente.")
         
-    # Filter the DataFrame to get rows where 'City' contains the search_string
+    # Filter the DataFrame to get rows where '' contains the search_string
     filtered_df = df[mask]
 
-    # Get values from other columns ('Name' and 'Age') in the same row
+    # Get values from other columns ('' and '') in the same row
     d = filtered_df['d']
     e = filtered_df['e']
     k = filtered_df['k']
@@ -56,15 +56,23 @@ def page_content():
     t = filtered_df['t']
     x = filtered_df['x']
     y = filtered_df['y']
+
+    aa = filtered_df['aa']
+    ab = filtered_df['ab']
+    
     columns = ['d', 'e', 'k', 'g', 'l', 't', 'x', 'y']
+    columns1 = ['aa', 'ab']
     first_row_data_loc = df.loc[0, columns]
+    first_row_data_loc1 = df.loc[0, columns1]
 
     concatenated_df = pd.concat([d, e, k, g, l, t, x, y], axis=1, keys=first_row_data_loc)
+    concatenated_df1 = pd.concat([aa, ab], axis=1, keys=first_row_data_loc1)
     # ,ignore_index=True
 
     # Display the concatenated DataFrame
     if my_input:
         st.dataframe(concatenated_df)
+        st.dataframe(concatenated_df1)
   
 page_content()
 #st.title("Projects")
