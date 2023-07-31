@@ -79,7 +79,7 @@ def page_content():
     # Display the concatenated DataFrame
     if my_input:
         st.dataframe(concatenated_df)
-        st.dataframe(df_hlinks, escape_html=False, unsafe_allow_html=True)
+        st.dataframe(df_hlinks)
         #st.dataframe(concatenated_df1)
   
 page_content()
