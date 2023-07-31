@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from pages import Consulta Pacientes IREN
+from pages import Consulta_Pacientes_IREN
 
 favicon = "images/ucsp.ico"
 st.set_page_config(layout="wide",
@@ -19,7 +19,7 @@ st.sidebar.markdown("***")
 
 consult = st.button("Consulta de Pacientes IREN")
 if consult:
-    Consulta Pacientes IREN.page_content()
+    Consulta_Pacientes_IREN.page_content()
 
 	
 col1, col2 = st.columns(2)
