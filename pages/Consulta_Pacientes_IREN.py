@@ -37,7 +37,7 @@ def page_content():
     search_string = my_input
 
     # Create a boolean mask to identify rows containing the search_string in 'City' column
-    mask = (df['a'] == search_string) | (df['b'] == search_string) | (df['c'] == search_string)
+    mask = (df['Nombres y apellidos'] == search_string) | (df['Nùmero de Historia'] == search_string) | (df['DNI'] == search_string)
     if my_input:
         if not mask.any():
             st.write("Información incorrecta. Intente nuevamente.")
@@ -46,8 +46,8 @@ def page_content():
     filtered_df = df[mask]
 
     # Get values from other columns ('Name' and 'Age') in the same row
-    d = filtered_df['d']
-    e = filtered_df['e']
+    d = filtered_df['N']
+    e = filtered_df['N']
 
 
     concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
