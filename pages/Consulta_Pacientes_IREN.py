@@ -58,7 +58,7 @@ def page_content():
     y = filtered_df['y']
 
 
-    concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e', 'k', 'g', 'l', 't', 'x', 'y'])
+    concatenated_df = pd.concat([d, e, k, g, l, t, x, y], axis=1, keys=['d', 'e', 'k', 'g', 'l', 't', 'x', 'y'])
     # ,ignore_index=True
 
     # Display the concatenated DataFrame
