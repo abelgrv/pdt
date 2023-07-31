@@ -22,7 +22,9 @@ def page_content():
     #st.dataframe(df)
 
     st.title("Consulta de pacientes IREN")
-    
+    image = Image.open('images/logo.png')
+    st.sidebar.image(image)
+    st.sidebar.markdown("***")
     if "my_input" not in st.session_state:
         st.session_state["my_input"] = ""
     
