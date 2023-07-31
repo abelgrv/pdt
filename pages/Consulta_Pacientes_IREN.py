@@ -47,7 +47,7 @@ def page_content():
 
     # Get values from other columns ('Name' and 'Age') in the same row
     d = filtered_df['N']
-    e = filtered_df['N']
+    e = filtered_df['Responsable']
 
 
     concatenated_df = pd.concat([d, e], axis=1, keys=['d', 'e'])
