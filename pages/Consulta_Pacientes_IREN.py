@@ -62,7 +62,8 @@ def page_content():
     # ,ignore_index=True
 
     # Display the concatenated DataFrame
-    st.dataframe(concatenated_df)
+    if my_input:
+        st.dataframe(concatenated_df)
   
 page_content()
 #st.title("Projects")
