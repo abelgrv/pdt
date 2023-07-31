@@ -8,21 +8,21 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-st.title("Contact")
+st.title("Contacto")
 
 with st.container():
     st.write("---")
-    st.header("Get In Touch With Me!")
+    st.header("Si tienes alguna duda u observación deja un mensaje")
     st.write("##")
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
     <form action="https://formsubmit.co/abel.ramos@ucsp.edu.pe" method="POST">
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
-        <button type="submit">Send</button>
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="message" placeholder="Tu mensaje aquí" required></textarea>
+        <button type="submit">Enviar</button>
     </form>
     """
     left_column, right_column = st.columns(2)
